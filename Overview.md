@@ -1,0 +1,31 @@
+# System Overview
+
+This project proposes a multi-agent AI system for detecting security bugs in code. The goal is not only to identify vulnerabilities, but also to explain why a code pattern is risky using domain knowledge from security standards.
+
+To support explainable vulnerability detection, the system will use **Retrieval-Augmented Generation (RAG)** to retrieve relevant facts from the **Common Weakness Enumeration (CWE)** database. By grounding each analysis in CWE references, the agents can produce outputs that are more transparent, traceable, and useful in practice.
+
+## Project Phases
+
+### Phase 1: Knowledge Mapping
+
+Study the CWE database and review existing RAG-based architectures to understand how security knowledge can be retrieved and applied during analysis.
+
+### Phase 2: Agent Design
+
+Define specialized roles for the collaborating agents, such as a **Code Analyzer**, a **CWE Specialist**, and a **Reporter**.
+
+### Phase 3: RAG Implementation
+
+Build a vector database of CWE entries so the agents can retrieve relevant facts in real time during vulnerability analysis.
+
+### Phase 4: Prototyping
+
+Use an orchestration framework such as **LangChain** or **AutoGen** to connect the agents and coordinate the workflow.
+
+### Phase 5: Evaluation
+
+Test the system against known vulnerable code snippets to measure how well it detects security bugs and how clearly it explains them.
+
+## Expected Outcome
+
+The final system should combine multi-agent reasoning with security knowledge retrieval to produce explainable and standards-based vulnerability detection results.
